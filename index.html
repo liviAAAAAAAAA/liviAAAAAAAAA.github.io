@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Fiji, um belo arquipélago no Pacífico Sul, com praias deslumbrantes e rica cultura.">
+    <title>planetatour.flog.br</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    
+    body {
+    font-family: 'Georgia', serif; /* Fonte mais elegante */
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Cinza claro */
+    color: #333;
+}
+
+header {
+    background-color: #003366; /* Azul escuro */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2.8em;
+    margin: 0;
+    font-weight: normal;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #003366; /* Azul escuro */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
+}
+
+h2 {
+    color: #00509e; /* Azul médio */
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 2em;
+    border-bottom: 2px solid #00509e;
+    padding-bottom: 10px;
+}
+
+img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    margin-top: 15px;
+}
+
+article {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #e0e0e0; /* Cinza claro */
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+ul li:hover {
+    background: #00509e; /* Azul médio */
+    color: white;
+    transform: scale(1.02);
+}
+
+.hidden {
+    display: none;
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 20px 0;
+}
+
+.video-button {
+    background-color: #003366; /* Azul escuro */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 15px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.video-button:hover {
+    background-color: #00509e; /* Azul médio */
+    transform: scale(1.05);
+}
+
+span {
+    cursor: pointer;
+    color: #003366; /* Azul escuro */
+    text-decoration: underline;
+}
+
+span:hover {
+    color: #00509e; /* Azul médio */
+}
+
+</style>    
+       
+</head>
+<body>
+    <header>
+        <h1>Planetatour.flog.br</h1>
+    </header>
+    <main>
+        <article>
+            <h2><strong>Bandeira da Polinésia Francesa</strong></h2>
+            <img src="th.jpeg" alt="Bandeira de Fiji">
+            <p>A bandeira da Polinésia Francesa reflete a identidade cultural e a ligação política dessa coletividade ultramarina com a França. Ela possui duas faixas horizontais vermelhas, uma no topo e outra na parte inferior, e uma faixa branca ao centro onde se encontra o brasão oficial da região.</p>
+            <p>A bandeira da Polinésia Francesa é reconhecida oficialmente e utilizada em conjunto com a bandeira francesa, reforçando tanto a autonomia cultural quanto a ligação administrativa com a França.</p>
+            <article>
+                <h2><strong>Sobre a Polinésia Francesa</strong></h2>
+                <img src="polinesia-beach.jpeg" alt="Praia paradisíaca na Polinésia Francesa">
+                <p>A Polinésia Francesa é uma coletividade ultramarina da França localizada no Oceano Pacífico, composta por cinco arquipélagos e cerca de 118 ilhas, famosas por suas lagoas turquesa, praias de areia branca e ricas tradições culturais. A capital é Papeete, situada na ilha de Taiti, a maior e mais populosa do território.</p>
+                <p>A geografia da Polinésia Francesa é diversa, com montanhas vulcânicas, florestas tropicais e extensos recifes de coral. O clima é tropical, com uma estação chuvosa que vai de novembro a abril.</p>
+                <p>Atividades populares na Polinésia Francesa incluem mergulho, snorkeling, passeios de canoa, trilhas em montanhas vulcânicas e a oportunidade de conhecer a cultura polinésia em eventos de dança e música tradicionais, como o famoso festival Heiva.</p>
+            </article>
+            <article>
+                <h2><strong>Atrações Principais da Polinésia Francesa</strong></h2>
+                <ul>
+                   
+                    <li onclick="toggleInfo('fakaravaInfo')">Atol de Fakarava</li>
+                    <li onclick="toggleInfo('rangiroaInfo')">Atol de Rangiroa</li>
+                    <li onclick="toggleInfo('huahineInfo')">Ilha de Huahine</li>
+                    <li onclick="toggleInfo('tahaaInfo')">Ilha de Tahaa</li>
+                </ul>
+               
+                <div id="fakaravaInfo" class="hidden">
+                    <img src="fakarava.jpeg" alt="Atol de Fakarava">
+                    <p>O Atol de Fakarava é um Patrimônio da Humanidade da UNESCO, famoso por suas águas límpidas e rica biodiversidade marinha. É um destino ideal para mergulho, onde você pode encontrar tubarões, raias e uma variedade de peixes tropicais.</p>
+                </div>
+                <div id="rangiroaInfo" class="hidden">
+                    <img src="rangiroa.jpeg" alt="Atol de Rangiroa">
+                    <p>Rangiroa é um dos maiores atóis do mundo e é famoso por suas lagoas de águas cristalinas e rica vida marinha. É um paraíso para mergulhadores, oferecendo a oportunidade de observar tubarões e cardumes de peixes em seus recifes vibrantes.</p>
+                </div>
+                <div id="huahineInfo" class="hidden">
+                    <img src="huahine.jpeg" alt="Ilha de Huahine">
+                    <p>A Ilha de Huahine é conhecida por suas tradições culturais, paisagens naturais e águas azuis. Os visitantes podem explorar templos antigos, fazer caminhadas nas montanhas e desfrutar de atividades aquáticas em suas praias tranquilas.</p>
+                </div>
+                <div id="tahaaInfo" class="hidden">
+                    <img src="tahaa.jpeg" alt="Ilha de Tahaa">
+                    <p>A Ilha de Tahaa é famosa por suas plantações de baunilha e beleza natural. Os visitantes podem fazer passeios de barco ao redor da ilha, visitar as plantações de baunilha e aproveitar o snorkeling em suas águas cristalinas.</p>
+                </div>
+            </article>
+            
+            
+            <article>
+                <h2><strong>Cultura Polinésia</strong></h2>
+                <img src="polinesia-danca-tradicional.jpeg" alt="Dança tradicional da Polinésia Francesa">
+                <p>A cultura da Polinésia Francesa é rica e vibrante, com tradições que incluem danças, música e celebrações. Os habitantes locais valorizam a hospitalidade e preservam costumes como o "tatau" (tatuagem tradicional) e a "dança do fogo".</p>
+                <p>As danças polinésias, como o "ʻOri Tahiti", fazem parte essencial das celebrações e eventos culturais, muitas vezes acompanhadas de músicas tradicionais e instrumentos como o "pahu" (tambor) e o "toere" (tambor de madeira).</p>
+                <p>A gastronomia da Polinésia Francesa é uma fusão de sabores do Pacífico e influências francesas, destacando-se pratos à base de peixes, frutas tropicais e leite de coco. Um prato típico é o "poisson cru", que consiste em peixe cru marinado em suco de limão e leite de coco.</p>
+                <button class="video-button" onclick="window.open('https:www.youtube.com/embed/QMD1hYuAL40', '_blank')">Assistir ao Vídeo sobre a Cultura Polinésia</button>
+            </article>
+            
+            <article>
+                <h2><strong>Endereços Notáveis na Polinésia Francesa</strong></h2>
+                <ul>
+                    <li><a href="https://www.google.com/maps/search/?api=1&query=Papeete,+Tahiti,+Polinésia+Francesa" target="_blank"><strong>Papeete:</strong> Tahiti, Polinésia Francesa</a></li>
+                    <li><a href="https://www.google.com/maps/search/?api=1&query=Matira+Beach,+Bora+Bora,+Polinésia+Francesa" target="_blank"><strong>Praia de Matira:</strong> Bora Bora, Polinésia Francesa</a></li>
+                    <li><a href="https://www.google.com/maps/search/?api=1&query=Monte+Otemanu,+Bora+Bora,+Polinésia+Francesa" target="_blank"><strong>Monte Otemanu:</strong> Bora Bora, Polinésia Francesa</a></li>
+                    <li><a href="https://www.google.com/maps/search/?api=1&query=Moorea,+Polinésia+Francesa" target="_blank"><strong>Ilha de Moorea:</strong> Moorea, Polinésia Francesa</a></li>
+                    <li><a href="https://www.google.com/maps/search/?api=1&query=Rangiroa,+Tuamotu,+Polinésia+Francesa" target="_blank"><strong>Rangiroa:</strong> Tuamotu, Polinésia Francesa</a></li>
+                    <li><a href="https://www.google.com/maps/search/?api=1&query=Huahine,+Ilhas+Sociedade,+Polinésia+Francesa" target="_blank"><strong>Huahine:</strong> Ilhas Sociedade, Polinésia Francesa</a></li>
+                    <li><a href="https://www.google.com/maps/search/?api=1&query=Tetiaroa,+Polinésia+Francesa" target="_blank"><strong>Tetiaroa:</strong> Polinésia Francesa</a></li>
+                </ul>
+            </article>
+            
+            <article>
+                <h2><strong>Informações sobre a Polinésia Francesa</strong></h2>
+                <ul>
+                    <li onclick="toggleInfo('climaInfo')">Clima</li>
+                    <li onclick="toggleInfo('vegetacaoInfo')">Vegetação</li>
+                    <li onclick="toggleInfo('relevoInfo')">Relevo</li>
+                    <li onclick="toggleInfo('faunaInfo')">Fauna</li>
+                    <li onclick="toggleInfo('populacaoInfo')">População</li>
+                    <li onclick="toggleInfo('idhInfo')">IDH</li>
+                    <li onclick="toggleInfo('governoInfo')">Tipo de Governo</li>
+                    <li onclick="toggleInfo('moedaInfo')">Moeda</li>
+                    <li onclick="toggleInfo('pibInfo')">PIB</li>
+                </ul>
+                <div id="climaInfo" class="hidden">
+                    <img src="clima_polinesia.webp" alt="Clima">
+                    <p>A Polinésia Francesa possui um clima tropical, com temperaturas médias variando entre 23°C e 30°C. A estação chuvosa vai de novembro a abril, enquanto a estação seca ocorre de maio a outubro.</p>
+                </div>
+                <div id="vegetacaoInfo" class="hidden">
+                    <img src="vegetacao_polinesia.jpeg" alt="Vegetação">
+                    <p>A vegetação da Polinésia Francesa é rica e diversificada, com florestas tropicais, plantas endêmicas e extensos recifes de coral. As ilhas possuem várias espécies de árvores, incluindo coqueiros e árvores de pão.</p>
+                </div>
+                <div id="relevoInfo" class="hidden">
+                    <img src="relevo_polinesia.jpg" alt="Relevo">
+                    <p>O relevo da Polinésia Francesa é montanhoso, com muitas ilhas apresentando picos altos e vales profundos, criando paisagens deslumbrantes. As ilhas são formadas principalmente por rochas vulcânicas.</p>
+                </div>
+                <div id="faunaInfo" class="hidden">
+                    <img src="fauna_polinesia.jpeg"Fauna">
+                    <img src="fauna_polinesia2.jpeg" alt="Animais da Polinésia">
+                    <p>A fauna da Polinésia Francesa é diversa e única, com várias espécies endêmicas. Destacam-se aves coloridas e uma rica vida marinha em recifes de corais, com peixes tropicais e tartarugas.</p>
+                    <p>As florestas abrigam lagartos e borboletas. Essa biodiversidade enfrenta ameaças, tornando a conservação essencial.</p>
+                </div>
+                <div id="populacaoInfo" class="hidden">
+                    <p>A população da Polinésia Francesa é de aproximadamente 280.000 habitantes, composta principalmente por polinésios, franceses e outras etnias.</p>
+                </div>
+                <div id="idhInfo" class="hidden">
+                    <p>O Índice de Desenvolvimento Humano (IDH) da Polinésia Francesa é considerado alto, com um valor em torno de 0,8, refletindo melhorias nas áreas de saúde, educação e renda.</p>
+                </div>
+                <div id="governoInfo" class="hidden">
+                    <p>A Polinésia Francesa é uma coletividade ultramarina da França, com um governo autônomo. O Presidente do Governo é o chefe de governo, enquanto o Presidente da Assembleia é o chefe de estado.</p>
+                    <p>Constituição: A constituição do território é baseada na legislação francesa, garantindo direitos fundamentais e a autonomia do governo local.</p>
+                    <p>Separação dos Poderes: O governo é dividido em Executivo e Legislativo, assegurando um sistema de freios e contrapesos.</p>
+                    <p>Direitos Humanos: A legislação garante direitos e liberdades fundamentais, incluindo liberdade de expressão e de associação.</p>
+                    <p>Eleições Justas: As leis garantem a realização de eleições livres e justas, com um sistema de representação proporcional.</p>
+                </div>
+                <div id="pibInfo" class="hidden">
+                    <img src="pib_polinesia.jpeg" alt="PIB">
+                    <p>O PIB da Polinésia Francesa é estimado em cerca de 3,5 bilhões de dólares, com o turismo como principal motor econômico, seguido pela agricultura e pesca. O PIB per capita é de aproximadamente 12.000 dólares, refletindo desafios como a diversificação econômica e a dependência do turismo.</p>
+                </div>
+                <div id="moedaInfo" class="hidden">
+                    <img src="moeda_polinesia.jpeg" alt="Moeda">
+                    <p>A moeda oficial da Polinésia Francesa é o franco polinésio (XPF). Em relação à conversão, 1 franco polinésio costuma valer cerca de 0,22 reais brasileiros.</p>
+                </div>
+            </article>
+            
+            <article>
+                <div class="gastos-polinesia">
+                    <h2>Média de Gastos na Polinésia Francesa</h2>
+                    <p>A média de gastos na Polinésia Francesa pode variar bastante dependendo do estilo de viagem. Aqui está uma estimativa:</p>
+            
+                    <h3>Acomodações</h3>
+                    <ul>
+                        <li><strong>Econômicos</strong>: $50 a $150 por noite.</li>
+                        <li><strong>Médio porte</strong>: $200 a $400 por noite.</li>
+                        <li><strong>Luxuosos</strong>: $600 a $1.500 por noite.</li>
+                    </ul>
+            
+                    <h3>Alimentação</h3>
+                    <ul>
+                        <li><strong>Restaurantes locais</strong>: $15 a $30 por refeição.</li>
+                        <li><strong>Restaurantes de médio porte</strong>: $30 a $70 por refeição.</li>
+                    </ul>
+            
+                    <h3>Transporte</h3>
+                    <ul>
+                        <li><strong>Transporte local</strong>: $2 a $10 por viagem.</li>
+                        <li><strong>Aluguel de carro</strong>: $60 a $120 por dia.</li>
+                    </ul>
+            
+                    <h3>Atividades</h3>
+                    <ul>
+                        <li><strong>Excursões e passeios</strong>: $70 a $200 por dia, dependendo da atividade.</li>
+                    </ul>
+            
+                    <h3>Estimativa Mensal</h3>
+                    <ul>
+                        <li><strong>Econômica</strong>: cerca de $2.000 a $3.000.</li>
+                        <li><strong>Médio porte</strong>: cerca de $4.000 a $7.000.</li>
+                        <li><strong>Luxo</strong>: $10.000 ou mais.</li>
+                    </ul>
+            
+                    <p>Esses valores são aproximados e podem variar conforme a época do ano e as escolhas individuais.</p>
+                </div>
+            </article>
+            
+            <article>
+                <div class="publico-alvo">
+                    <h2>Público-Alvo do Turismo na Polinésia Francesa</h2>
+                    
+                    <div class="segmento">
+                        <img src="relaxamento.jpeg" alt="Relaxamento na Polinésia Francesa">
+                        <h3>Turistas em Busca de Relaxamento</h3>
+                        <p>Pessoas que desejam férias tranquilas em ilhas paradisíacas e resorts de luxo.</p>
+                    </div>
+                
+                    <div class="segmento">
+                        <img src="mergulho.jpeg" alt="Aventuras na Polinésia Francesa">
+                        <h3>Aventureiros</h3>
+                        <p>Viajantes interessados em atividades como mergulho, snorkeling, trilhas e esportes aquáticos.</p>
+                    </div>
+                
+                    <div class="segmento">
+                        <img src="lua de mel.jpg" alt="Lua de Mel na Polinésia Francesa">
+                        <h3>Casais e Lua de Mel</h3>
+                        <p>Casais atraídos por paisagens deslumbrantes e um ambiente romântico para celebrar momentos especiais.</p>
+                    </div>
+                
+                    <div class="segmento">
+                        <img src="familia.jpg" alt="Famílias na Polinésia Francesa">
+                        <h3>Famílias</h3>
+                        <p>Famílias em busca de experiências culturais e atividades ao ar livre em um ambiente seguro e acolhedor.</p>
+                    </div>
+                
+                    <div class="segmento">
+                        <img src="OIP.jpeg" alt="Ecoturismo na Polinésia Francesa">
+                        <h3>Ecoturistas</h3>
+                        <p>Visitantes que desejam explorar a biodiversidade local e participar de atividades sustentáveis.</p>
+                    </div>
+                
+                
+            
+            <article>
+                <div class="vantagens-desvantagens">
+                    <h2>Vantagens e Desvantagens de Visitar a Polinésia Francesa</h2>
+                    
+                    <div class="vantagens">
+                        <h3>Vantagens</h3>
+                        <ul>
+                            <li><strong>Belezas Naturais:</strong> Ilhas paradisíacas, lagoas azul-turquesa e paisagens deslumbrantes.</li>
+                            <li><strong>Cultura Rica:</strong> Tradições vibrantes, danças e festivais autênticos que refletem a herança polinésia.</li>
+                            <li><strong>Clima Tropical:</strong> Temperaturas agradáveis e clima ensolarado durante todo o ano.</li>
+                            <li><strong>Atividades Diversificadas:</strong> Mergulho, snorkeling, caminhadas, e experiências culturais únicas.</li>
+                            <li><strong>Hospitalidade:</strong> Os polinésios são conhecidos por sua calorosa hospitalidade e acolhimento.</li>
+                        </ul>
+                    </div>
+                
+                    <div class="desvantagens">
+                        <h3>Desvantagens</h3>
+                        <ul>
+                            <li><strong>Custo:</strong> Viagens e hospedagem podem ser bastante caros, especialmente em resorts.</li>
+                            <li><strong>Acesso Limitado:</strong> Algumas ilhas são remotas e de difícil acesso, exigindo transporte adicional.</li>
+                            <li><strong>Períodos de Chuva:</strong> A estação chuvosa, de novembro a abril, pode trazer chuvas intensas e ciclones.</li>
+                            <li><strong>Infraestrutura em Desenvolvimento:</strong> Em algumas áreas, a infraestrutura pode ser limitada, afetando a experiência do visitante.</li>
+                            <li><strong>Impacto Ambiental:</strong> O turismo pode ter efeitos negativos sobre a biodiversidade e ecossistemas locais.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            
+    </main>
+    
+    <script>
+        function toggleInfo(infoId) {
+            const infoDiv = document.getElementById(infoId);
+            infoDiv.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
